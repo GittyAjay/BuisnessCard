@@ -40,54 +40,103 @@ class Dessign extends StatelessWidget {
                         letterSpacing: 5
                       ),
                       ),
-                      Container(
+//Without Card
+//                      Container(
+//                        color: Colors.teal.shade50,
+//                        padding: EdgeInsets.symmetric(vertical: 15,horizontal: 20),
+//                        margin: EdgeInsets.symmetric(vertical: 15,horizontal: 20),
+//                        child: Row(
+//                          children: <Widget>[
+//                            Icon(
+//                              Icons.call,
+//                              size: 20,
+//                              color: Colors.teal,
+//                            ),
+//                            SizedBox(
+//                              width: 70,
+//                            ),
+//                            Text('+91 3692363003',
+//                            style: TextStyle(
+//                              fontSize: 15,
+//                              color: Colors.black45,
+//                              fontWeight: FontWeight.bold
+//                            ),
+//                            )
+//                          ],
+//                        ),
+//                      ),
+//                      Container(
+//                        color: Colors.teal.shade50,
+//                        padding: EdgeInsets.symmetric(vertical: 15,horizontal: 20),
+//                        margin: EdgeInsets.symmetric(vertical: 5,horizontal: 20),
+//                        child: Row(
+//                          children: <Widget>[
+//                            Icon(
+//                              Icons.email,
+//                              size: 20,
+//                              color: Colors.teal,
+//                            ),
+//                            SizedBox(
+//                              width: 70,
+//                            ),
+//                            Text('rightmajay@gmail.com',
+//                              style: TextStyle(
+//                                  fontSize: 15,
+//                                  color: Colors.black45,
+//                                  fontWeight: FontWeight.bold
+//                              ),
+//                            )
+//                          ],
+//                        ),
+//                      )//
+                    SizedBox(
+                      height: 10,
+                    ),
+                      //With Card Widget
+                      Card(
+                        margin: EdgeInsets.symmetric(horizontal: 10),
                         color: Colors.teal.shade50,
-                        padding: EdgeInsets.symmetric(vertical: 15,horizontal: 20),
-                        margin: EdgeInsets.symmetric(vertical: 15,horizontal: 20),
-                        child: Row(
-                          children: <Widget>[
-                            Icon(
+                        child: Container(
+                          child: ListTile(
+                            leading: Icon(
                               Icons.call,
-                              size: 20,
-                              color: Colors.teal,
-                            ),
-                            SizedBox(
-                              width: 70,
-                            ),
-                            Text('+91 3692363003',
-                            style: TextStyle(
-                              fontSize: 15,
-                              color: Colors.black45,
-                              fontWeight: FontWeight.bold
-                            ),
-                            )
-                          ],
+                                size: 20,
+                               color: Colors.teal,
+                             ),
+                            title:   Text('+91 3692363003',
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Colors.black45,
+                                fontWeight: FontWeight.bold
+                              ),
+                              ),
+                          ),
                         ),
                       ),
-                      Container(
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Card(
+                        margin: EdgeInsets.symmetric(horizontal:10 ),
                         color: Colors.teal.shade50,
-                        padding: EdgeInsets.symmetric(vertical: 15,horizontal: 20),
-                        margin: EdgeInsets.symmetric(vertical: 5,horizontal: 20),
-                        child: Row(
-                          children: <Widget>[
-                            Icon(
+                        child: Container(
+                          child: ListTile(
+                            leading: Icon(
                               Icons.email,
                               size: 20,
                               color: Colors.teal,
                             ),
-                            SizedBox(
-                              width: 70,
-                            ),
-                            Text('rightmajay@gmail.com',
+                            title:    Text('rightmajay@gmail.com',
                               style: TextStyle(
                                   fontSize: 15,
                                   color: Colors.black45,
                                   fontWeight: FontWeight.bold
                               ),
-                            )
-                          ],
+                            ),
+                          ),
                         ),
-                      )
+                      ),
+
                     ],
                   )
                 ),
